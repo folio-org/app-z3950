@@ -1,6 +1,6 @@
 # Change history for app-z3950
 
-## [1.0.1](https://github.com/folio-org/app-z3950/tree/v1.0.1) (IN PROGRESS)
+## [1.0.1](https://github.com/folio-org/app-z3950/tree/v1.0.1) (2025-05-26)
 
 * Wind `app-platform-minimal` dependency back to `^2.0.0-SNAPSHOT`.
 
