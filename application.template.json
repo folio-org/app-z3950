@@ -5,15 +5,15 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^3.0.0",
-      "preRelease": "false"
+      "version": "^3.0.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ],
   "modules": [
     {
       "name": "mod-z3950",
-      "version": "^4.4.0",
-      "preRelease": "false"
+      "version": "^4.4.0-SNAPSHOT",
+      "preRelease": "only"
     }
   ]
 }
