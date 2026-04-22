@@ -5,7 +5,7 @@
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^3.0.0",
+      "version": "^3.3.0",
       "preRelease": "false"
     }
   ],
