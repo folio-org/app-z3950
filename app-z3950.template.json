@@ -2,17 +2,18 @@
   "name": "${project.name}",
   "version": "${project.version}",
   "description": "${project.description}",
-  "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-complete",
-      "version": "^2.0.0-SNAPSHOT"
+      "version": "^3.0.0",
+      "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-z3950",
-      "version": "latest"
+      "version": "^4.4.0",
+      "preRelease": "false"
     }
   ]
 }
