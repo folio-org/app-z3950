@@ -1,20 +1,21 @@
 {
-  "id" : "app-z3950-1.1.0-SNAPSHOT.100200000001699",
+  "id" : "app-z3950-1.1.0-SNAPSHOT.100200000001702",
   "name" : "app-z3950",
-  "version" : "1.1.0-SNAPSHOT.100200000001699",
+  "version" : "1.1.0-SNAPSHOT.100200000001702",
   "description" : "Z39.50 server for FOLIO",
   "modules" : [ {
-    "id" : "mod-z3950-4.4.1-SNAPSHOT.204",
+    "id" : "mod-z3950-4.4.2-SNAPSHOT.2012",
     "name" : "mod-z3950",
-    "version" : "4.4.1-SNAPSHOT.204"
+    "version" : "4.4.2-SNAPSHOT.2012"
   } ],
   "uiModules" : [ ],
   "dependencies" : [ {
     "name" : "app-platform-complete",
-    "version" : "^3.0.0-SNAPSHOT"
+    "version" : "^3.0.0-SNAPSHOT",
+    "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-z3950-4.4.1-SNAPSHOT.204",
+    "id" : "mod-z3950-4.4.2-SNAPSHOT.2012",
     "name" : "Z39.50/SRU/SRW server for FOLIO",
     "requires" : [ {
       "id" : "login",
@@ -36,8 +37,8 @@
       } ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-z3950:4.4.1-SNAPSHOT.204",
-      "dockerPull" : true,
+      "dockerImage" : "folioci/mod-z3950:4.4.2-SNAPSHOT.2012",
+      "dockerPull" : false,
       "dockerArgs" : {
         "HostConfig" : {
           "Memory" : 402653184,
