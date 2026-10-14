@@ -1,0 +1,54 @@
+{
+  "id" : "app-z3950-1.1.0-SNAPSHOT.100200000001699",
+  "name" : "app-z3950",
+  "version" : "1.1.0-SNAPSHOT.100200000001699",
+  "description" : "Z39.50 server for FOLIO",
+  "modules" : [ {
+    "id" : "mod-z3950-4.4.1-SNAPSHOT.204",
+    "name" : "mod-z3950",
+    "version" : "4.4.1-SNAPSHOT.204"
+  } ],
+  "uiModules" : [ ],
+  "dependencies" : [ {
+    "name" : "app-platform-complete",
+    "version" : "^3.0.0-SNAPSHOT"
+  } ],
+  "moduleDescriptors" : [ {
+    "id" : "mod-z3950-4.4.1-SNAPSHOT.204",
+    "name" : "Z39.50/SRU/SRW server for FOLIO",
+    "requires" : [ {
+      "id" : "login",
+      "version" : "7.3"
+    }, {
+      "id" : "graphql",
+      "version" : "1.5"
+    }, {
+      "id" : "source-storage-source-records",
+      "version" : "3.0"
+    } ],
+    "provides" : [ {
+      "id" : "sru",
+      "version" : "1.4",
+      "handlers" : [ {
+        "methods" : [ "GET" ],
+        "pathPattern" : "/sru",
+        "permissionsRequired" : [ ]
+      } ]
+    } ],
+    "launchDescriptor" : {
+      "dockerImage" : "folioci/mod-z3950:4.4.1-SNAPSHOT.204",
+      "dockerPull" : true,
+      "dockerArgs" : {
+        "HostConfig" : {
+          "Memory" : 402653184,
+          "PortBindings" : {
+            "9997/tcp" : [ {
+              "HostPort" : "%p"
+            } ]
+          }
+        }
+      }
+    }
+  } ],
+  "uiModuleDescriptors" : [ ]
+}
