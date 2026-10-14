@@ -1,5 +1,5 @@
 update_config:
-  enabled: false # Change to 'true' when ready for automated module updates
+  enabled: true
   update_branch_format: version-update/{0}
   labels:
     - version-update
